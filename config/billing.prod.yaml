@@ -1,0 +1,22 @@
+schema_version: 1
+environment: production
+currency: USD
+
+# Model pricing catalog for token metering and usage estimates.
+models:
+  gemini-3.8-flash:
+    rate_schedule:
+      - effective_from: "2026-09-02"
+        pricing_version: gemini-3.8-flash-usd-on-demand-intro-2026
+        input_usd_per_million: 0.75
+        input_cached_usd_per_million: 0.075
+        input_audio_usd_per_million: 0.75
+        output_usd_per_million: 3.75
+      - effective_from: "2027-01-01"
+        pricing_version: gemini-3.8-flash-usd-on-demand-standard-2027
+        input_usd_per_million: 1.5
+        input_cached_usd_per_million: 0.15
+        input_audio_usd_per_million: 1.5
+        output_usd_per_million: 7.5
+
+
